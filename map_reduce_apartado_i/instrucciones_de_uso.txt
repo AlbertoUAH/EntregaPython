@@ -1,0 +1,38 @@
+INSTRUCCIONES DE USO - apartado i)
+1. Para generar la muestra de parejas (causa / fallecidos), creando el archivo "parejas.txt"
+
+   C:\...> python genera_pares.py -i fichero_entrada.csv -y anno {-r regiones.txt}
+		-i : Fichero csv de entrada a procesar
+		-y : Anno a consultar
+		-r : En caso de querer eliminar determinados países, adjuntar un fichero
+		     .txt con las regiones, separadas por saltos de linea
+
+2. A continuación, el funcionamiento map-reduce:
+
+   C:\...> python total_fallecimientos.py -i parejas.txt
+ 
+   ________________________________________________________________________________
+  |Si desea redirigir la salida a un fichero de texto...                           |
+  | 										   |
+  |C:\...> python total_fallecimientos.py -i parejas.txt > total_fallecimientos.txt|
+  |________________________________________________________________________________|  
+
+____________________________________________________________________________________________________
+NOTA: Para la correcta ejecución del programa serán necesarias las siguientes librerías y/o módulos:
+
+MODULOS DE JUPYTER
+------------------
+apartado_e.py -> Modulo con las funciones descritas en el apartado e
+			-> Carga del csv
+			-> Limpieza de columnas
+			-> Borrado caracter ">" (ejemplo: ">1000")
+			-> Filtrar tabla
+
+apartado_h.py -> Modulo que contiene la función "eliminar_filas", empleada
+		 para eliminar las filas con los países adjuntos en "regiones.txt"
+		 en caso de que se indique por parámetro
+
+OTROS MODULOS
+-------------
+pandas
+mrjob.job
