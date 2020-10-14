@@ -100,8 +100,6 @@ def preprocesar_tabla_datos(fichero):
 
 if __name__ == '__main__':
     """
-    Preconditions
-    -------------
     El comando de ejecucion debe tener el siguiente formato:
         python genera_pares.py -i fichero_entrada.csv -y anno {-r regiones.txt}
         

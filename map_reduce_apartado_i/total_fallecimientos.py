@@ -71,8 +71,6 @@ def crear_diccionario(archivo):
 # Ejecucion por terminal
 if __name__ == '__main__':
     """
-    Preconditions
-    -------------
     El fichero de entrada debe estar situado en el directorio actual
     El fichero debe estar en formato txt
     El fichero NO debe estar vacio
