@@ -71,9 +71,10 @@ def crear_diccionario(archivo):
 # Ejecucion por terminal
 if __name__ == '__main__':
     """
-    El fichero de entrada debe estar situado en el directorio actual
-    El fichero debe estar en formato txt
-    El fichero NO debe estar vacio
+    El fichero de entrada:
+        debe estar situado en el directorio actual
+        debe estar en formato txt
+        NO debe estar vacio
     """
     mensaje_error = "Error. Uso correcto: python total_fallecimientos.py -i parejas.txt"
     if len(sys.argv) != 3:

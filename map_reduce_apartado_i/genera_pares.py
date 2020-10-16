@@ -97,7 +97,6 @@ def preprocesar_tabla_datos(fichero):
     return df_fallecimientos
 
 # Ejecucion por terminal
-
 if __name__ == '__main__':
     """
     El comando de ejecucion debe tener el siguiente formato:
@@ -105,7 +104,7 @@ if __name__ == '__main__':
         
         -> -i fichero_entrada.csv => fichero de datos de entrada
         -> -y anno => anno a consultar el total de fallecimientos
-        -> -r columnas.txt => fichero con las regiones a eliminar (OPCIONAL)
+        -> -r regiones.txt => fichero con las regiones a eliminar (OPCIONAL)
     """
     mensaje_error = "Error. Uso correcto: python genera_pares.py -i fichero_entrada.csv -y anno {-r regiones.txt}"
     
